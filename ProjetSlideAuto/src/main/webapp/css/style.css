@@ -1,0 +1,91 @@
+img {
+	max-width: 100%;
+	width: auto;
+	border-radius: 2%;
+}
+
+h2 {
+	font-size: 2vw;
+	color: white;
+}
+
+.titre {
+	width: 15%;
+	border-radius: 5%;
+	background-color: rgba(99, 179, 95, 0.8);
+}
+
+figure {
+	position: relative;
+	max-width: 100%;
+}
+
+figcaption {
+	position: relative;
+	width: 15%;
+	border-radius: 5%;
+	font-style: white;
+	background-color: rgba(212, 64, 66, 0.7);
+	font-size: 1vw;
+	padding: 0.99%;
+	margin-top: 55%;
+	text-align: center;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: rgba(235, 233, 229, 1);
+}
+
+.fig {
+	display: flex;
+	justify-content: space-around;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+/* For tablets & smart phones */
+@media ( max-width : 767px) {
+	body {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.container {
+		width: auto
+	}
+}
+
+/* For smartphones */
+@media ( max-width : 480px) {
+	figcaption {
+		visibility: hidden;
+	}
+	.container {
+		width: auto
+	}
+}
+
+@media ( min-width : 481px) and (max-width: 1200px) {
+	figcaption {
+		visibility: hidden;
+	}
+	.container {
+		width: auto;
+	}
+}
+/* For smaller displays like laptops */
+@media ( min-width : 768px) {
+	.container {
+		width: 724px
+	}
+}
+
+/* For larger displays */
+@media ( min-width : 1200px) {
+	.container {
+		width: 1170px
+	}
+}
